@@ -4,8 +4,6 @@ Omniauth strategy for renren[http://www.renren.com]
 
 = Usage
 
-Note: There is a bug within latest omniauth-oauth2 (version 1.1.0), please use 1.0.3 version instead.
-
 Please refer to Omniauth[https://github.com/intridea/omniauth/] for usage
 
 = Thanks
