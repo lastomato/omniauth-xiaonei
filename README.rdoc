@@ -1,0 +1,19 @@
+= Omniauth-renren
+
+Omniauth strategy for renren[http://www.renren.com]
+
+= Usage
+
+Please refer to Omniauth[https://github.com/intridea/omniauth/] for usage
+
+= Thanks
+
+Author(s) of Omniauth-facebook and Omniauth.
+
+= License
+
+MIT License
+
+= Copyright
+
+Copyright (c) Jie Fan.
