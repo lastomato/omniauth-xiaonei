@@ -1,8 +1,22 @@
-= Omniauth-renren
+= Omniauth-xiaonei
 
 Omniauth strategy for renren[http://www.renren.com]
 
 = Usage
+
+Guess you are able to read Chinese:)
+
+具体用法请参照Omniauth，需要注意的是，目前只实现了Server-side的认证，接下来会实现基本认证和Client-side认证。
+
+在`config/initializers/omniauth.rb`中，可以传入`:fields`参数，其值为字符串，作用是在认证结束阶段返回用户资料时指定返回的具体内容。
+可以参见人人的文档：http://wiki.dev.renren.com/wiki/Users.getInfo
+
+下面是可以选的值："uid,name,sex,star,zidou,vip,birthday,tinyurl,headurl,mainurl,hometown_location
+work_history,university_history"
+
+如果不填，那么默认的值为："uid,name,tinyurl,headhurl,zidou,star"
+
+参数的具体含义请参照人人的文档（如上所示）。
 
 Please refer to Omniauth[https://github.com/intridea/omniauth/] for usage
 
