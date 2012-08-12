@@ -4,15 +4,29 @@ Omniauth strategy for renren[http://www.renren.com]
 
 = Usage
 
-Guess you are able to read Chinese:)
+    gem install omniauth-xiaonei
 
-具体用法请参照Omniauth，需要注意的是，目前只实现了Server-side的认证，接下来会实现基本认证和Client-side认证。
+具体用法请参照Omniauth和example文件夹下的client_side.rb：
 
-在`config/initializers/omniauth.rb`中，可以传入`:fields`参数，其值为字符串，作用是在认证结束阶段返回用户资料时指定返回的具体内容。
+    gem install sinatra --no-rdoc --no-ri
+    ruby -rubygems client_side.rb
+
+如果出现"forbidden"等问题，有可能是因为Omniauth-oauth2 1.1.0的bug，可以这样解决：
+
+    # 在Gemfile中加入这一行
+    gem "omniauth-oauth2", :git => "git://github.com/lastomato/omniauth-oauth2.git"
+    # 然后运行
+    bundle install
+
+    # 或者安装 1.0.2版本的Omniauth-oauth2
+    gem install --version "1.0.2" omniauth-oauth2
+
+在config/initializers/omniauth.rb中，可以传入:fields参数，其值为字符串，作用是在认证结束阶段返回用户资料时指定返回的具体内容。
 可以参见人人的文档：http://wiki.dev.renren.com/wiki/Users.getInfo
 
-下面是可以选的值："uid,name,sex,star,zidou,vip,birthday,tinyurl,headurl,mainurl,hometown_location
-work_history,university_history"
+下面是可以选的值：
+
+"uid,name,sex,star,zidou,vip,birthday,tinyurl,headurl,mainurl,hometown_location,work_history,university_history"
 
 如果不填，那么默认的值为："uid,name,tinyurl,headhurl,zidou,star"
 
