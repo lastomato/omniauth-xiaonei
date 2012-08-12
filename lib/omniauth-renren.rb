@@ -1,2 +1,2 @@
-require "omniauth/renren"
+require "omniauth/xiaonei"
 

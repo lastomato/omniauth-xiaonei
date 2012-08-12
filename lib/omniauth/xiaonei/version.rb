@@ -1,5 +1,5 @@
 module Omniauth
-  module Renren
+  module Xiaonei
     VERSION = "0.0.2"
   end
 end

@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "omniauth/renren/version"
+require "omniauth/xiaonei/version"
 
 Gem::Specification.new do |s|
-  s.name        = "omniauth-renren"
-  s.version     = Omniauth::Renren::VERSION
+  s.name        = "omniauth-xiaonei"
+  s.version     = Omniauth::Xiaonei::VERSION
   s.authors     = ["Jie Fan"]
   s.email       = ["ustc.flyingfox@gmail.com"]
-  s.homepage    = "https://github.com/lastomato/omniauth-renren"
-  s.summary     = %q{Omniauth strategy for Renren}
-  s.description = %q{Omniauth strategy for Renren}
+  s.homepage    = "https://github.com/lastomato/omniauth-xiaonei"
+  s.summary     = %q{ Omniauth strategy for Renren (Previous Xiaonei) }
+  s.description = %q{ Omniauth strategy for Renren }
 
-  s.rubyforge_project = "omniauth-renren"
+  s.rubyforge_project = "omniauth-xiaonei"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

@@ -1,4 +1,4 @@
-= Omniauth-renren
+= Omniauth-xiaonei
 
 Omniauth strategy for renren[http://www.renren.com]
 
